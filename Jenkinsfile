@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                sh 'rm -rf tomcat'
+                sh 'rm -rf tomcat-ansible-roles-'
                 sh 'git clone https://github.com/gshashi1408/tomcat-ansible-roles-.git'
             }
         }
