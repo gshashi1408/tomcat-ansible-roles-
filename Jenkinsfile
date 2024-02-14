@@ -8,7 +8,7 @@ pipeline {
                 sh 'git clone https://github.com/gshashi1408/tomcat-ansible-roles-.git'
             }
         }
-        stage('Deploy Prometheus') {
+        stage('Deploy tomcat') {
             steps {
                 sh 'ansible-playbook tomcat.yml -i inventory/hosts'
             }
