@@ -1,4 +1,4 @@
-- name: Install Prometheus
+- name: Install tomcat
   hosts: all
   roles:
-    - prometheus
+    - tomcate
