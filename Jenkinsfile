@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 sh 'rm -rf tomcat'
-                sh 'git clone https://github.com/gshashi1408/prometheus.git'
+                sh 'git clone https://github.com/gshashi1408/tomcat-ansible-roles-.git'
             }
         }
         stage('Deploy Prometheus') {
